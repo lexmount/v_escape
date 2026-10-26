@@ -118,6 +118,7 @@ main() {
         "v_escape-proc-macro"
         "v_escape"
         "v_htmlescape"
+        "v_xmlescape"
         "v_jsonescape"
         "v_latexescape"
     )
@@ -148,4 +149,4 @@ main() {
 }
 
 # Run main function
-main "$@" 
+main "$@"

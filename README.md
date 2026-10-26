@@ -4,6 +4,19 @@
 
 The simd optimized escape code
 
+## XML text escaping
+
+`v_xmlescape` provides SIMD-accelerated XML text escaping. It replaces `&`, `<`,
+and `>` with XML entities while preserving quotes, slashes, and other characters.
+It exposes the same `escape_string`, `escape_fmt`, and `escape_bytes` APIs as
+`v_htmlescape`.
+
+```rust
+use v_xmlescape::escape_fmt;
+
+assert_eq!(escape_fmt("a\"b/c & <tag>").to_string(), "a\"b/c &amp; &lt;tag&gt;");
+```
+
 ## Documentation
 
 - Minimum supported Rust version: 1.93.1 or later
