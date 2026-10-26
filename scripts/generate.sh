@@ -3,7 +3,7 @@
 set -xe
 
 cargo install --path codegen
-for i in v_latexescape v_jsonescape v_htmlescape; do
+for i in v_latexescape v_jsonescape v_htmlescape v_xmlescape; do
   ~/.cargo/bin/v_escape_codegen -i $i
 done
 

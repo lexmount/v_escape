@@ -6,6 +6,7 @@ members = [
     "v_escape",
     "proc-macro",
     "v_htmlescape",
+    "v_xmlescape",
     "v_jsonescape",
     "v_latexescape",
     "benches"
@@ -17,6 +18,7 @@ default-members = [
     "v_escape",
     "proc-macro",
     "v_htmlescape",
+    "v_xmlescape",
     "v_jsonescape",
     "v_latexescape"
 ]

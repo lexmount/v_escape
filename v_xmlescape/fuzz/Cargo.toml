@@ -1,0 +1,21 @@
+[package]
+name = "v_xmlescape-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2024"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+v_xmlescape = { path = ".." }
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "xml_text"
+path = "fuzz_targets/xml_text.rs"
+test = false
+doc = false
